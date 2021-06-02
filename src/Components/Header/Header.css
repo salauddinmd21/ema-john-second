@@ -1,0 +1,22 @@
+
+.header{
+    text-align:  center;
+}
+.logo img{
+    height: 100px;
+}
+.main-menu{
+    background-color:  black;
+    line-height: 40px;
+    font-size: 20px; 
+}
+.main-menu a{
+    margin-left: 20px;
+    text-decoration: none;
+    padding: 6px;
+    color:white;
+  
+}
+  nav a:hover {
+    background-color: grey;
+}
