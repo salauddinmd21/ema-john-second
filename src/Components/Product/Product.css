@@ -6,7 +6,7 @@
 .product-info{
     margin-left: 10px;
 }
-.product-info h3{
+ .product-name{
     color: blue;
     font-weight: 400px;
 }
