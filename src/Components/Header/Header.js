@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { Link } from 'react-router-dom';
+import { UserContext } from '../../App';
 import Logo from '../../images/logo.png'
 import "./Header.css"
 
 const Header = () => {
+
+    const [loggedInUser, setLoggedInUser] =useContext(UserContext)
     return (
         <div className ='header'>
             <div className ='logo'>
@@ -10,9 +14,10 @@ const Header = () => {
             </div>
             <div>
                 <nav className='main-menu'>
-                    <a href="/shop">Shop</a>
-                    <a href="/review"> Review Order</a>
-                    <a href="/inventory">Manage Inventory</a>
+                    <Link to="/shop">Shop</Link>
+                    <Link to="/review"> Review Order</Link>
+                    <Link to="/inventory">Manage Inventory</Link>
+                    <p>{loggedInUser.displayName}</p>
                 </nav>
 
             </div>
