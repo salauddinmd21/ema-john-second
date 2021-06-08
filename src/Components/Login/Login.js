@@ -123,6 +123,8 @@ function Login() {
           newUserInfo.error = "";
           newUserInfo.success = true;
           setUser(newUserInfo);
+          setLoggedInUser(newUserInfo)
+          history.replace(from);
           updateUserName(user.name);
 
           console.log(res);
@@ -132,6 +134,7 @@ function Login() {
           newUserInfo.error = error.message;
           newUserInfo.success = false;
           setUser(newUserInfo);
+          
           // var errorMessage = error.message;
           // console.log(errorCode, errorMessage)
         });
